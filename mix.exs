@@ -35,10 +35,13 @@ defmodule Rumbl.Mixfile do
      {:phoenix_ecto, "~> 3.0"},
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.6"},
-     {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:comeonin, "~> 3.0"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:fs, github: "synrc/fs", manager: :rebar, override: true},
+     {:phoenix_live_reload, "~> 1.0", only: :dev},
+     {:mix_test_watch, "~> 0.3", only: :dev, runtime: false}]
+     
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
