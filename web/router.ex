@@ -24,6 +24,8 @@ defmodule Rumbl.Router do
       pipe_through [:browser, :authenticate_user]
 
       resources "/videos", VideoController
+
+      get "/watch/:id", WatchController, :show
     end
   end
 
