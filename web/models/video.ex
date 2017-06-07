@@ -8,6 +8,7 @@ defmodule Rumbl.Video do
     field :description, :string
     field :slug, :string
     belongs_to :user, Rumbl.User
+    has_many :anotations, Rumbl.Annotation
 
     belongs_to :category, Rumbl.Category
 
