@@ -37,6 +37,7 @@ defmodule Rumbl.Mixfile do
      {:phoenix_html, "~> 2.6"},
      {:gettext, "~> 0.11"},
      {:comeonin, "~> 3.0"},
+     {:sweet_xml, "~> 0.6.5"},
      {:cowboy, "~> 1.0"},
      {:fs, github: "synrc/fs", manager: :rebar, override: true},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
